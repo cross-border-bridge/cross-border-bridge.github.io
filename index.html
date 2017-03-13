@@ -1,8 +1,578 @@
-<html>
-	<head>
-		<meta charset="UTF-8">
-	</head>
-	<body>
-		<p>準備中</p>
-	</body>
-</html>
+<!DOCTYPE html><html><head><meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CROSS BORDER BRIDGE</title><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous"><link rel="stylesheet" href="./main.css"><link rel="shortcut icon" href="./img/favicon.ico" type="image/vnd.microsoft.icon"><link rel="icon" href="./favicon.ico" type="image/vnd.microsoft.icon"></head><body><div class="page-top"><div class="page-top-logo"><h1><img src="img/pc-top-logo.png" alt="CROSS BORDER BRIDGE"></h1><div class="page-description"><p>CrossBorderBridge は, プラットフォームフリー な データ通信 と RPC <em>(Remote Procedure Call)</em>  をする機構です。</p></div></div></div><div class="container"><nav class="navbar navbar-default navbar-fixed-top"><div class="container"><div class="navbar-header"></div></div><button type="button" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" class="navbar-toggle collapsed"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button><a href="." class="navbar-brand"></a></nav><h1>Support</h1><p>CrossBorderBridge がサポートするプラットフォームと言語を下表に示します。</p>
+<table>
+<thead>
+<tr>
+<th>Platform</th>
+<th>Language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Webブラウザ, WebView</td>
+<td>JavaScript (ES5), TypeScript</td>
+</tr>
+<tr>
+<td>Android 4.1 (API Level 16) 以降</td>
+<td>Java</td>
+</tr>
+<tr>
+<td>iOS 8.0 以降</td>
+<td>Objective-c, swift</td>
+</tr>
+</tbody>
+</table>
+<a name="repositories"></a><h1>Repositories</h1><p>CrossBorderBridge 関連リポジトリの一覧を示します。</p>
+<table>
+<thead>
+<tr>
+<th>Respository</th>
+<th>Type</th>
+<th>Platform</th>
+<th>Language</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/data-bus">data-bus</a></td>
+<td><a href="#data-bus">DataBus</a></td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/data-bus-android">data-bus-android</a></td>
+<td><a href="#data-bus">DataBus</a></td>
+<td>Android</td>
+<td>Java</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/data-bus-ios">data-bus-ios</a></td>
+<td><a href="#data-bus">DataBus</a></td>
+<td>iOS</td>
+<td>Objective-c</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/data-channel">data-channel</a></td>
+<td><a href="#data-channel">DataChannel</a></td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/data-channel-android">data-channel-android</a></td>
+<td><a href="#data-channel">DataChannel</a></td>
+<td>Android</td>
+<td>Java</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/data-channel-ios">data-channel-ios</a></td>
+<td><a href="#data-channel">DataChannel</a></td>
+<td>iOS</td>
+<td>Objective-c</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/function-channel">function-channel</a></td>
+<td><a href="#function-channel">FunctionChannel</a></td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/function-channel-android">function-channel-android</a></td>
+<td><a href="#function-channel">FunctionChannel</a></td>
+<td>Android</td>
+<td>Java</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/function-channel-ios">function-channel-ios</a></td>
+<td><a href="#function-channel">FunctionChannel</a></td>
+<td>iOS</td>
+<td>Objective-c</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/object-channel">object-channel</a></td>
+<td><a href="#object-channel">ObjectChannel</a></td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/object-channel-android">object-channel-android</a></td>
+<td><a href="#object-channel">ObjectChannel</a></td>
+<td>Android</td>
+<td>Java</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/object-channel-ios">object-channel-ios</a></td>
+<td><a href="#object-channel">ObjectChannel</a></td>
+<td>iOS</td>
+<td>Objective-c</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/memory-queue">memory-queue</a></td>
+<td>データ送受信方式</td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/multiplex-data-bus">multiplex-data-bus</a></td>
+<td><a href="#data-bus">DataBus</a>派生</td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/memory-queue-data-bus">memory-queue-data-bus</a></td>
+<td><a href="#data-bus">DataBus</a>派生</td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/multiplex-data-bus">post-message-data-bus</a></td>
+<td><a href="#data-bus">DataBus</a>派生</td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+<tr>
+<td><a href="https://github.com/cross-border-bridge/object-channel-wrapper">object-channel-wrapper</a></td>
+<td>Utility</td>
+<td>Web</td>
+<td>TypeScript</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>Webでは独立したリポジトリで提供している派生物やUtilityは, Android や iOS では派生元等のリポジトリに同梱して提供しています。</p>
+</blockquote>
+<a name="architecture"></a><h1>Architecture</h1><p>CrossBorderBridge は, 次の4層の機能群で構成されています。</p>
+<table>
+<thead>
+<tr>
+<th>Layer name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#data-bus">DataBus</a></td>
+<td>UTF-8テキスト形式のデータを送受信する IPC <em>(Inter Process Communication)</em> 機構</td>
+</tr>
+<tr>
+<td><a href="#data-channel">DataChannel</a></td>
+<td><a href="#data-bus">DataBus</a>を用いて, 要求/応答形式のデータ通信をできるようにしたもの</td>
+</tr>
+<tr>
+<td><a href="#function-channel">FunctionChannel</a></td>
+<td><a href="#data-channel">DataChannel</a>を利用したRPC機構</td>
+</tr>
+<tr>
+<td><a href="#object-channel">ObjectChannel</a></td>
+<td><a href="#function-channel">FunctionChannel</a>を利用したオブジェクト指向モデルのRPC機構</td>
+</tr>
+</tbody>
+</table>
+<a name="specification"></a><h1>Specification</h1><p>CrossBorderBridge 各層の仕様を示します。</p>
+<a name="data-bus"></a><h2>Data Bus</h2><ul>
+<li>DataBus は, <strong>データが流れる経路</strong> です</li>
+<li>データ送受信方式 <em>(例: TCP/IP, pipe, message-queue ...etc)</em> 毎に派生クラスを作成するものとします</li>
+</ul>
+<h3>インタフェース</h3><p>DataBusは, 以下のメソッドを実装するクラスとします。</p>
+<table>
+<thead>
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>send</code></td>
+<td>任意個数のデータを送信するメソッド</td>
+</tr>
+<tr>
+<td><code>addHandler</code></td>
+<td>データを受信するハンドラを登録するメソッド</td>
+</tr>
+<tr>
+<td><code>removeHandler</code></td>
+<td><code>addHandler</code>したものを解除するメソッド</td>
+</tr>
+<tr>
+<td><code>destroy</code></td>
+<td>破棄するメソッド</td>
+</tr>
+</tbody>
+</table>
+<p>以下に, この条件を満たすインタフェースを typescript で定義した例を示します。</p>
+<pre><code class="language-typescript">interface DataBus {
+    send(...data: any[]): void;
+    addHandler(handler: (...data: any[]) =&gt; void): void;
+    removeHandler(handler: (...data: any[]) =&gt; void): void;
+    destroy(): void;
+}
+</code></pre>
+<h3>データ形式</h3><ul>
+<li>DataBus内に流すデータは, 0個以上のデータから成る任意要素数のJSON配列とします</li>
+<li>データの型は, <strong>JSON形式で表現可能な任意の型</strong> とします</li>
+</ul>
+<pre><code class="language-javascript">[
+    data1, data2, ..., dataN
+]
+</code></pre>
+<blockquote>
+<p>JSON: <a href="https://tools.ietf.org/html/rfc7159">RFC7159</a>及びその関連RFCを参照</p>
+</blockquote>
+<h3>派生クラス</h3><p>DataBusの派生クラスとして, 次のものを提供しています。</p>
+<table>
+<thead>
+<tr>
+<th>Class name</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#webview-data-bus">WebViewDataBus</a></td>
+<td>AndroidのネイティブアプリとWebView間のDataBus</td>
+</tr>
+<tr>
+<td><a href="#webview-data-bus">CBBWKWebViewDataBus</a></td>
+<td>iOSのネイティブアプリとWKWebView間のDataBus</td>
+</tr>
+<tr>
+<td>PostMessageDataBus</td>
+<td>Webアプリケーションのiframe間のDataBus</td>
+</tr>
+<tr>
+<td>MemoryQueueDataBus<br>CBBMemoryQueueDataBus</td>
+<td>同一プロセス内のDataBus（テスト用途）</td>
+</tr>
+<tr>
+<td><a href="#multiplex-data-bus">MultiplexDataBus<br>CBBMultiplexDataBus</a></td>
+<td>DataBusに流すデータに識別名を付けて多重化できるようにしたもの</td>
+</tr>
+</tbody>
+</table>
+<a name="webview-data-bus"></a><h3>WebView Data Bus</h3><p><a href="#webview-data-bus">WebViewDataBus</a>は, スマートフォンのネイティブコードとWebView上で動作するWebコンテンツ（HTML5）間のブリッジ通信を行う<a href="#data-bus">DataBus</a>の実装です。</p>
+<p><a href="#webview-data-bus">WebViewDataBus</a>を用いることで, 通常のHTML5では実現が難しい機能を実装し易くなります。</p>
+<a name="multiplex-data-bus"></a><h3>Multiplex Data Bus</h3><p><a href="#multiplex-data-bus">MultiplexDataBus</a>は, データの識別と多重化（多層化）を実現する<a href="#data-bus">DataBus</a>の実装です。</p>
+<h4>データ形式</h4><p><a href="#multiplex-data-bus">MultiplexDataBus</a>は, <a href="#data-bus">DataBus</a>上に流すデータの先頭要素をデータを識別するID（dataId）とします。</p>
+<pre><code class="language-javascript">[
+    &quot;dataId&quot;, data1, data2, ..., dataN
+]
+</code></pre>
+<h4>データの多層化</h4><p>以下に, データを多層化する例を示します。</p>
+<pre><code class="language-typescript">    // 伝送経路のDataBusを作成
+    var dataBus: DataBus = new MemoryQueueDataBus(sender, receiver);
+    // DataBus上にslotAを作成
+    var slotA: MultiplexDataBus = new MultiplexDataBus(dataBus, &quot;slotA&quot;);
+    // slotA上にslotBを作成
+    var slotB: MultiplexDataBus = new MultiplexDataBus(slotA, &quot;slotB&quot;);
+    // slotB上にslotCを作成
+    var slotC: MultiplexDataBus = new MultiplexDataBus(slotB, &quot;slotC&quot;);
+</code></pre>
+<p><code>slotC.send(&quot;foo&quot;)</code> をした時に リモート側<sup>※</sup> で受信するデータは, 下表のようになります。</p>
+<p><em>※リモート側でも同様の階層構成のDataBusとMultiplexDataBusを設置しているものとします。</em></p>
+<table>
+<thead>
+<tr>
+<th>DataBus layer</th>
+<th>Receive Data</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>dataBus</code></td>
+<td><code>[&quot;slotA&quot;, &quot;slotB&quot;, &quot;slotC&quot;, &quot;foo&quot;]</code></td>
+</tr>
+<tr>
+<td><code>slotA</code></td>
+<td><code>[&quot;slotB&quot;, &quot;slotC&quot;, &quot;foo&quot;]</code></td>
+</tr>
+<tr>
+<td><code>slotB</code></td>
+<td><code>[&quot;slotC&quot;, &quot;foo&quot;]</code></td>
+</tr>
+<tr>
+<td><code>slotC</code></td>
+<td><code>[&quot;foo&quot;]</code></td>
+</tr>
+</tbody>
+</table>
+<a name="data-channel"></a><h2>Data Channel</h2><ul>
+<li><a href="#data-channel">DataChannel</a>は, <a href="#data-bus">DataBus</a>を用いて, 要求/応答形式のデータ通信（双方向データ通信）をできるようにしたものです</li>
+<li><a href="#data-bus">DataBus</a>と同等の単方向通信にも対応しています</li>
+</ul>
+<h3>データ形式</h3><p><a href="#data-bus">DataBus</a>上に流すデータを次の2要素のJSON配列形式とします。</p>
+<pre><code class="language-javascript">[
+    dataType,
+    data
+]
+</code></pre>
+<a name="datatype"></a><h3>dataType</h3><p><code>dataType</code> は <code>data</code> の種別を特定するための <code>1</code> から <code>4</code> の数値です。</p>
+<table>
+<thead>
+<tr>
+<th>dataType</th>
+<th>name</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>1</code></td>
+<td><a href="#push-data">PUSH data</a></td>
+</tr>
+<tr>
+<td><code>2</code></td>
+<td><a href="#request-data">REQUEST data</a></td>
+</tr>
+<tr>
+<td><code>3</code></td>
+<td><a href="#response-data">RESPONSE data</a></td>
+</tr>
+<tr>
+<td><code>4</code></td>
+<td><a href="#error-data">ERROR data</a></td>
+</tr>
+</tbody>
+</table>
+<a name="push-data"></a><h3>PUSH data</h3><p><a href="#push-data">PUSHデータ</a>は, 応答を返信する必要が無い単方向通信データです。</p>
+<pre><code class="language-javascript">[
+    1,
+    [
+        ChannelPacket
+    ]
+]
+</code></pre>
+<blockquote>
+<p><a href="#channel-packet">ChannelPacket</a> の説明は後述します。</p>
+</blockquote>
+<a name="request-data"></a><h3>REQUEST data</h3><p><a href="#request-data">REQUESTデータ</a>は, 送信先に応答の返信を求める双方向通信データです。</p>
+<pre><code class="language-javascript">[
+    2,
+    [
+        RequestTag,
+        ChannelPacket
+    ]
+]
+</code></pre>
+<blockquote>
+<p><a href="#request-tag">RequestTag</a>, <a href="#channel-packet">ChannelPacket</a> の説明は後述します。</p>
+</blockquote>
+<a name="response-data"></a><h3>RESPONSE data</h3><p><a href="#response-data">RESPONSEデータ</a>は, <a href="#request-data">REQUESTデータ</a>に対する応答です。</p>
+<pre><code class="language-javascript">[
+    3,
+    [
+        RequestTag,
+        ChannelPacket
+    ]
+]
+</code></pre>
+<blockquote>
+<p><a href="#request-tag">RequestTag</a>, <a href="#channel-packet">ChannelPacket</a> の説明は後述します。</p>
+</blockquote>
+<a name="error-data"></a><h3>ERROR data</h3><ul>
+<li><a href="#error-data">ERRORデータ</a>は, <a href="#request-data">REQUESTデータ</a>に対するエラー応答です。</li>
+<li><a href="#error-data">ERRORデータ</a>は, <strong><a href="#data-channel">DataChannel</a>自身の異常ケース</strong> でのみ用います。</li>
+</ul>
+<pre><code class="language-javascript">[
+    4,
+    [
+        RequestTag,
+        ErrorType
+    ]
+]
+</code></pre>
+<blockquote>
+<p><a href="#request-tag">RequestTag</a> の説明は後述します。</p>
+</blockquote>
+<p><code>ErrorType</code> には, 次の何れかの文字列が設定されます。</p>
+<table>
+<thead>
+<tr>
+<th>ErrorType</th>
+<th>Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&quot;Timeout&quot;</code></td>
+<td>応答待ち時間がタイムアウト指定時間を超過</td>
+</tr>
+<tr>
+<td><code>&quot;Close&quot;</code></td>
+<td>応答を受信する前に<a href="#data-channel">DataChannel</a>がクローズされた</td>
+</tr>
+</tbody>
+</table>
+<a name="channel-packet"></a><h3>Channel Packet</h3><ul>
+<li><a href="#channel-packet">ChannelPacket</a>の内容はDataChannelの利用者が自由に定義できます</li>
+<li>DataChannel自身は<a href="#channel-packet">ChannelPacket</a>の内容について感知しません</li>
+</ul>
+<a name="request-tag"></a><h3>Request Tag</h3><ul>
+<li><a href="#request-tag">RequestTag</a>は, 応答を必要とする要求を送信する際に要求元で生成する次の形式の電文です<ul>
+<li>形式: <code>tagName:tagIndex</code></li>
+</ul>
+</li>
+<li><code>tagName</code> は適当な文字列です</li>
+<li><code>tagIndex</code> は 0 または 1以上の整数であり, 要求毎にユニークな値とします</li>
+<li><a href="#request-tag">RequestTag</a>は, <a href="#request-data">REQUESTデータ</a>を作成する時に生成します</li>
+<li><a href="#response-data">RESPONSEデータ</a>（<a href="#error-data">ERRORデータ</a>）には, <a href="#request-data">REQUESTデータ</a>から指定されたものと同じ<a href="#request-tag">RequestTag</a>を指定することで, <a href="#response-data">RESPONSEデータ</a>（<a href="#error-data">ERRORデータ</a>）がどの<a href="#request-data">REQUESTデータ</a>に対応するものかを特定します</li>
+</ul>
+<a name="function-channel"></a><h2>Function Channel</h2><p><a href="#function-channel">FunctionChannel</a>は, <a href="#data-channel">DataChannel</a>を利用したRPC <em>(Remote Procedure Call)</em> 機構です。</p>
+<a name="sequence"></a><h3>Sequence</h3><p><img src="img/sequence-fc.png" class="img-responsive" alt="function channel sequence"></p>
+<ul>
+<li>A: RPC実行元</li>
+<li>B: RPC実行先</li>
+</ul>
+<a name="omi"></a><h3>OMI</h3><ul>
+<li>リモート側に対して オブジェクト・メソッド の実行を要求します</li>
+<li>リモート側では, 実行されるオブジェクトを予め <a href="#bind">bind</a> している必要があります</li>
+</ul>
+<p><a href="#channel-packet">ChannelPacket</a> format:</p>
+<pre><code class="language-javascript">[
+    &quot;omi&quot;, [
+        id,
+        methodName,
+        [ arguments ]
+    ]
+]
+</code></pre>
+<ul>
+<li><code>id</code> : 実行先で <a href="#bind">bind</a> されているオブジェクト識別名 <em>(string型)</em></li>
+<li><code>methodName</code> : 実行するメソッド名 <em>(string型)</em></li>
+<li><code>arguments</code> : 実行するメソッドに渡す引数 <em>(json-array型)</em></li>
+</ul>
+<a name="edo"></a><h3>EDO</h3><ul>
+<li><code>OMI</code> の実行結果(戻り値)の応答</li>
+<li><code>OMI</code> をPUSH送信した場合は省略する</li>
+</ul>
+<p><a href="#channel-packet">ChannelPacket</a> format:</p>
+<pre><code class="language-javascript">[
+    &quot;edo&quot;, [
+        Result
+    ]
+]
+</code></pre>
+<ul>
+<li><code>Result</code> : <a href="#omi">OMI</a>で要求されたメソッドの戻り値 <em>(any型)</em></li>
+</ul>
+<a name="err"></a><h3>ERR</h3><ul>
+<li><code>OMI</code> の実行失敗応答</li>
+<li><code>OMI</code> をPUSH送信した場合は省略する</li>
+</ul>
+<p><a href="#channel-packet">ChannelPacket</a> format:</p>
+<pre><code class="language-javascript">[
+    &quot;err&quot;, [
+        ErrorType
+    ]
+]
+</code></pre>
+<p><code>ErrorType</code> には, 次の何れかの文字列が設定されます。</p>
+<table>
+<thead>
+<tr>
+<th>ErrorType</th>
+<th>Cause</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>&quot;Timeout&quot;</code></td>
+<td>DataChannelのエラー（応答待ち時間がタイムアウト指定時間を超過）</td>
+</tr>
+<tr>
+<td><code>&quot;Close&quot;</code></td>
+<td>DataChannelのエラー（応答を受信する前に<a href="#data-channel">DataChannel</a>がクローズされた）</td>
+</tr>
+<tr>
+<td><code>&quot;ObjectNotBound&quot;</code></td>
+<td><a href="#bind">bind</a>されていない<a href="#function-channel">FunctionChannel</a>への<a href="#omi">OMI</a>要求</td>
+</tr>
+<tr>
+<td><code>&quot;MethodNotExist&quot;</code></td>
+<td><a href="#bind">bind</a>されているオブジェクトに未定義のメソッドの<a href="#omi">OMI</a>要求</td>
+</tr>
+</tbody>
+</table>
+<a name="interface"></a><h3>Interface</h3><pre><code class="language-typescript">type FunctionChannelCallback = (error?: string, result?: any) =&gt; void;
+
+interface FunctionChannel {
+    bind(id: string, object: Object): void;
+    invoke(id: string, method: string, args?: any[], callback?: FunctionChannelCallback, timeout?: number): void
+}
+</code></pre>
+<a name="bind"></a><h4>bind</h4><ul>
+<li>オブジェクト識別名(id) と オブジェクト(object) を結合</li>
+<li>オブジェクト識別名(id) は リモート から <code>invoke</code> される時のキーとなる</li>
+<li>重複する オブジェクト識別名(id) を指定した場合は上書きされる</li>
+</ul>
+<blockquote>
+<p>オブジェクト識別名(id) は <strong>必ずしもクラス名と一致していなくても良い</strong> ものとします。</p>
+<ul>
+<li><em>例えば, 同一クラスから生成した複数オブジェクトを<a href="#function-channel">FunctionChannel</a>で扱いたい場合, <code>className:1</code> という形式で扱うことを推奨します</em></li>
+<li><em>複数オブジェクトを生成しない場合, オブジェクト識別名(id) はクラス名と合わせておくことを推奨します</em></li>
+</ul>
+</blockquote>
+<a name="invoke"></a><h4>invoke</h4><ul>
+<li>リモート で <code>bind</code> されているメソッドを実行 (<a href="#omi">OMI</a>を送信)</li>
+<li><code>id</code> : オブジェクト識別名</li>
+<li><code>method</code> : メソッド名</li>
+<li><code>args</code> : 引数 (引数が無い場合は指定を省略 or <code>undefined</code> を指定)</li>
+<li><code>callback</code> : 戻り値を受け取るハンドラ ( <code>void</code> or 不要の場合は指定を省略)</li>
+<li><code>timeout</code> : 実行のタイムアウト時間をミリ秒単位で指定 (省略時はタイムアウトしない)</li>
+</ul>
+<a name="functionchannelcallback"></a><h4>FunctionChannelCallback</h4><ul>
+<li><code>type</code><ul>
+<li><code>&quot;error&quot;</code> : <a href="#error-type"><code>error-type</code></a> が格納されている <em>( 正常時は <code>undefined</code> )</em></li>
+<li><code>&quot;result&quot;</code> : 正常時は戻り値が格納されている</li>
+</ul>
+</li>
+</ul>
+<a name="object-channel"></a><h2>Object Channel</h2><ul>
+<li><a href="#object-channel">ObjectChannel</a>は, <a href="#function-channel">FunctionChannel</a>を利用したオブジェクト指向のRPC <em>(Remote Procedure Call)</em> 機構です</li>
+<li>インスタンスの生成/破棄に <a href="#function-channel">FunctionChannel</a> の <a href="#obj-channel">$objチャネル</a>を用います</li>
+<li>メソッドの呼び出しには, <a href="#function-channel">FunctionChannel</a> の機能をそのまま利用します</li>
+</ul>
+<a name="obj-channel"></a><h3>$obj channel</h3><pre><code class="language-typescript">interface $obj {
+    /**
+     * リモート側のクラスのインスタンス化
+     *
+     * @param className インスタンス化するクラス名
+     * @param args コンストラクタに渡す引数
+     * @return 文字列形式のObjectTag
+     */
+    create(className: string, [...args: any]): string;
+
+    /**
+     * リモート側でインスタンス化したオブジェクトを破棄
+     *
+     * @param objectTag 破棄対象のリモートオブジェクト（$obj.createの戻り値）
+     */
+    destroy(objectTag: string): void;
+}
+</code></pre>
+<a name="sequence"></a><h3>sequence</h3><p><img src="img/sequence-oc.png" class="img-responsive" alt="object channel sequence"> </p>
+<ul>
+<li>A: RPC実行元</li>
+<li>B: RPC実行先</li>
+</ul>
+<a name="bind-class"></a><h4>bind-class</h4><ul>
+<li>RPCでインスタンス化できるクラスを登録します</li>
+<li>JavaScriptの場合は <code>function</code> をクラスとします</li>
+</ul>
+<a name="create-object"></a><h4>create-object</h4><ul>
+<li><a href="#bind-class">bind-class</a>しているクラスのインスタンス化を行います</li>
+<li><a href="#remote-object">remote-object</a>とそれに紐付く<a href="#object-tag">object-tag</a>が生成されます</li>
+<li>また, <a href="#function-channel">FunctionChannel</a>を用いて, <a href="#object-tag">object-tag</a>を識別名としてインスタンス（オブジェクト）を<a href="#bind">bind</a>します</li>
+</ul>
+<a name="remote-object"></a><h4>remote-object</h4><ul>
+<li><a href="#object-channel">ObjectChannel</a>のオブジェクト実体です</li>
+<li>オブジェクト(クラスインスタンス) と それを紐付けるタグ で構成されます</li>
+</ul>
+<a name="object-tag"></a><h4>object-tag</h4><h5>string format</h5><p><code>&quot;クラス名:クラス別オブジェクト通し番号(数字)&quot;</code></p>
+<a name="json-format"></a><h5>json format</h5><pre><code class="language-javascript">{
+    &quot;className&quot;: クラス名,
+    &quot;objectId&quot;: クラス別オブジェクト通し番号
+}
+</code></pre>
+<a name="invoke-method"></a><h4>invoke-method</h4><p><a href="#invoke">FunctionChannelのinvoke</a>をそのまま利用します</p>
+<a name="destroy-object"></a><h4>destroy-object</h4><ul>
+<li><a href="#remote-bject">remote-object</a> の 破棄 (参照外し)</li>
+<li><a href="#remote-bject">remote-object</a> に destroyメソッド (destructor) が定義されている場合は実行</li>
+</ul><hr><div class="footer"><a rel="license" href="http://creativecommons.org/licenses/by/2.1/jp/"><img alt="クリエイティブ・コモンズ・ライセンス" style="border-width:0" src="https://i.creativecommons.org/l/by/2.1/jp/80x15.png" class="license">このサイトの画像は、</a><a rel="license" href="http://creativecommons.org/licenses/by/2.1/jp/">クリエイティブ・コモンズ 表示 2.1 日本 ライセンスの下に提供されています。</a><p align="right">&copy; 2017 DWANGO Co., Ltd.</p></div></div><script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script><script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script></body></html>
